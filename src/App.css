@@ -14,6 +14,18 @@
   pointer-events: none;
 }
 
+.parent {
+  display: grid;
+  /* space around each child in grid */
+  gap: 1rem;
+  /* space given to the column, repeat for responsiveness */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: pink;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

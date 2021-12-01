@@ -19,9 +19,9 @@ function App() {
           <h3 className="intro-description">
             Software Engineer under progress
           </h3>
-          <h3>
+          <h4>
             Searching for opportunites with a team that has a growth mindset
-          </h3>
+          </h4>
           <ul>
             <li>Always eager to learn, adapt, and grow</li>
             <li>Test my communication and team skills</li>
@@ -44,9 +44,23 @@ function App() {
         </section>
         <section className="about-me">
           <img src="" alt="profile shot of joseph" />
+          <p>
+            Yo! My name is Joseph Almeida, I've been close to a computer since
+            an early age but did not start programming until I reached
+            university.
+          </p>
+          <p>
+            When I'm not coding I play games with my friends, work out, or when
+            the weather permits some amateur astronomy
+          </p>
         </section>
         <section className="highlighted-work">
-          ram to lineup 1-line layout
+          <div className="parent white">
+            <div className="box 1">1</div>
+            <div className="box 2">2</div>
+            <div className="box 3">3</div>
+            <div className="box 4">4</div>
+          </div>
         </section>
         <section className="closing-remarks">Say Hello to Me ;P</section>
       </main>
