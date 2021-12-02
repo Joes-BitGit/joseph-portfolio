@@ -43,7 +43,7 @@ function App() {
           </a>
         </section>
         <section className="about-me">
-          <img src="" alt="profile shot of joseph" />
+          <img src="" alt="profile shot of Joseph" />
           <p>
             Yo! My name is Joseph Almeida, I've been close to a computer since
             an early age but did not start programming until I reached
@@ -55,11 +55,35 @@ function App() {
           </p>
         </section>
         <section className="highlighted-work">
-          <div className="parent white">
-            <div className="box 1">1</div>
-            <div className="box 2">2</div>
-            <div className="box 3">3</div>
-            <div className="box 4">4</div>
+          <div className="parent">
+            <div className="card 1">
+              <h4>Pomodoro</h4>
+              <p>25/5 Timer pumpkin style for the spooky season</p>
+              <img src="" alt="timer" className="visual" />
+            </div>
+            <div className="card 2">
+              <h4>Menu</h4>
+              <p>
+                Menu that creates, reads/searches, updates, and deletes items
+                for a restaurant
+              </p>
+              <img src="" alt="menu builder" className="visual" />
+            </div>
+            <div className="card 3">
+              <h4>Marvel Lookup</h4>
+              <p>Marvel character search that uses the Marvel API</p>
+              <img src="" alt="marvel lookup info" className="visual pink" />
+            </div>
+            <div className="card 4">
+              <h4>Journal</h4>
+              <p>Personal Journal to write thoughts and feelings down</p>
+              <img src="" alt="journal" className="visual" />
+            </div>
+            <div className="card 5">
+              <h4>Amatuer Astronomy</h4>
+              <p>Future Project</p>
+              <img src="" alt="screenshot of the timer" className="visual" />
+            </div>
           </div>
         </section>
         <section className="closing-remarks">Say Hello to Me ;P</section>

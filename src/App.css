@@ -22,8 +22,19 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.box {
-  background: pink;
+.card {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  /* Lines images up nicely */
+  justify-content: space-between;
+}
+
+.visual {
+  height: 100px;
+  width: 100%;
+  background: purple;
 }
 
 @media (prefers-reduced-motion: no-preference) {
