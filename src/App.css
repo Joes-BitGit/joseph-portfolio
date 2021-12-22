@@ -9,11 +9,6 @@
   color: var(--highlight-color);
 }
 
-.logo-initials {
-  margin: 0;
-  padding-top: 1%;
-}
-
 .parent {
   display: grid;
   /* space around each child in grid */
@@ -39,4 +34,82 @@
 
 .end-content {
   padding-bottom: 1%;
+}
+
+/* primary header */
+.logo-initials {
+  margin: 2rem;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-navigation {
+  /* general reset */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  background: hsl(0 0% 0%/0.8);
+  /* backdrop-filter: blur(2rem); */
+}
+
+@media (max-width: 35em) {
+  .primary-navigation {
+    --gap: 2em;
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: min(30vh, 8rem) 2em;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-out;
+  }
+
+  .active-mobile-menu {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background: steelblue;
+    width: 2rem;
+    height: 2rem;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+/* General */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.sr-only {
+  /* removes element from the page fglow */
+  position: absolute;
+  /* moves content 10000px to the left */
+  left: -10000px;
+  /* positions the conent vertically at the same location it was originally */
+  top: auto;
+  /* visually hides everything that does not fit into the 1px by 1px */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
