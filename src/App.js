@@ -1,13 +1,36 @@
+import { useState } from "react";
 import "./App.css";
 import "./index.css";
 
 function App() {
+  const [mobileNavMenu, setMobileNavMenu] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavMenu(!mobileNavMenu);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header primary-header flex">
         <p className="logo-initials">{"{ JA }"}</p>
+
+        <button
+          className={`mobile-nav-toggle `}
+          /* looks for id primary-navigation */
+          aria-controls="primary-navigation"
+          aria-expanded={mobileNavMenu}
+          onClick={toggleMobileNav}
+        >
+          <span className="sr-only">Menu</span>
+        </button>
+
         <nav className="navbar">
-          <ul>
+          <ul
+            id="primary-navigation"
+            className={`primary-navigation flex ${
+              mobileNavMenu ? "active-mobile-menu" : ""
+            }`}
+          >
             <li>Home</li>
             <li>Projects</li>
           </ul>
@@ -27,17 +50,17 @@ function App() {
             <li>Always eager to learn, adapt, and grow</li>
             <li>Test my communication and team skills</li>
             <li>Have more authority and autonomy over the systems I build</li>
-            <li>B.S. in Computer Engineering from CSULB</li>
+            <li>B.S. Computer Engineering from CSULB</li>
           </ul>
           <a
             href="http://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            L
+            LinkedIn
           </a>
           <a href="http://github.com" target="_blank" rel="noopener noreferrer">
-            G
+            Github
           </a>
           <a href="http://google.com" target="_blank" rel="noopener noreferrer">
             Email
@@ -91,16 +114,16 @@ function App() {
         </section>
         <section className="closing-remarks">
           <h3 className="contact-info">Stay In Touch</h3>
-          <p>Say Hello to Me ;P</p>
+          <p>Don't be a stranger ;P</p>
           <a
             href="http://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            L
+            LinkedIn
           </a>
           <a href="http://github.com" target="_blank" rel="noopener noreferrer">
-            G
+            Github
           </a>
           <a href="http://google.com" target="_blank" rel="noopener noreferrer">
             Email
