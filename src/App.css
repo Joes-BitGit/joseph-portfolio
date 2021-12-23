@@ -57,9 +57,15 @@
   margin: 0;
 
   background: hsl(0 0% 0%/0.8);
-  /* backdrop-filter: blur(2rem); */
+  backdrop-filter: blur(0.1rem);
 }
 
+@media (min-width: 35em) {
+  .primary-navigation {
+    --gap: 3rem;
+    padding: 1.5rem;
+  }
+}
 @media (max-width: 35em) {
   .primary-navigation {
     --gap: 2em;
@@ -87,11 +93,22 @@
     display: block;
     position: absolute;
     z-index: 9999;
-    background: steelblue;
+
+    background-image: url(icons/light-hamburger-menu32.png);
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    border-radius: 25%;
+    border: 0;
+
     width: 2rem;
     height: 2rem;
     top: 2rem;
     right: 2rem;
+  }
+
+  .mobile-nav-toggle.active {
+    background-image: url(icons/remove.png);
+    border-radius: 50%;
   }
 }
 
