@@ -15,7 +15,7 @@ function App() {
         <p className="logo-initials">{"{ JA }"}</p>
 
         <button
-          className={`mobile-nav-toggle `}
+          className={`mobile-nav-toggle ${mobileNavMenu ? "active" : ""}`}
           /* looks for id primary-navigation */
           aria-controls="primary-navigation"
           aria-expanded={mobileNavMenu}
@@ -130,7 +130,24 @@ function App() {
           </a>
         </section>
       </main>
-      <footer className="end-content">Designed by your boy</footer>
+      <footer className="end-content">
+        Designed by your boy
+        <div className="attribution">
+          <div>
+            Icons made by{" "}
+            <a
+              href="https://www.flaticon.com/authors/creatype"
+              title="Creatype"
+            >
+              Creatype
+            </a>{" "}
+            from{" "}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
