@@ -1,6 +1,9 @@
 :root {
   --dark-bg-color: #282c34;
   --highlight-color: #3ccf91;
+  --general-color: #ffffff;
+  --secondary-color: #9d9ea1;
+  --oppo-bg-color: #2c384e;
 }
 
 .App {
@@ -18,7 +21,8 @@
 }
 
 .card {
-  background: black;
+  background: var(--oppo-bg-color);
+  color: var(--general-color);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -29,16 +33,20 @@
 .visual {
   height: 100px;
   width: 100%;
-  background: purple;
+  background: var(--secondary-color);
 }
 
 .end-content {
   padding-bottom: 1%;
+  color: var(--general-color);
+  font-size: 0.75em;
 }
 
 /* primary header */
 .logo-initials {
   margin: 2rem;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .primary-header {
@@ -51,11 +59,6 @@
 }
 
 .primary-navigation {
-  /* general reset */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
   background: hsl(0 0% 0%/0.8);
   backdrop-filter: blur(0.1rem);
 }
@@ -112,6 +115,73 @@
   }
 }
 
+.greeting {
+  font-weight: bold;
+}
+
+.intro-name {
+  color: var(--general-color);
+  font-weight: 800;
+}
+
+.intro-description {
+  color: var(--general-color);
+  font-weight: 700;
+}
+
+.intro-sub {
+  color: var(--secondary-color);
+}
+
+.intro-list {
+  color: var(--secondary-color);
+}
+
+.intro-list > li {
+  padding: 1%;
+}
+
+.parent-info-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.intro-info-links {
+  text-decoration: none;
+  color: var(--highlight-color);
+}
+
+.intro-info-links:hover {
+  text-decoration: underline;
+  color: var(--general-color);
+  cursor: pointer;
+}
+
+.about-me {
+  color: var(--general-color);
+}
+
+.about-me-first,
+.about-me-second {
+  color: var(--secondary-color);
+}
+
+.projects {
+  color: var(--general-color);
+}
+
+.contact-info {
+  color: var(--general-color);
+}
+
+.contact-sub {
+  color: var(--secondary-color);
+}
+
+.closing-remarks {
+  padding-bottom: 1%;
+}
+
 /* General */
 .flex {
   display: flex;
@@ -129,4 +199,10 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

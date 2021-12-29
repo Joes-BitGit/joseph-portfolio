@@ -38,42 +38,55 @@ function App() {
       </header>
       <main className="main-content">
         <section className="intro-blurb">
-          <p>Greetings I'm-</p>
+          <p className="greeting">Greetings I'm-</p>
           <h2 className="intro-name">Joseph</h2>
           <h3 className="intro-description">
-            Software Engineer under progress
+            Software Engineer under progress.
           </h3>
-          <h4>
+          <h4 className="intro-sub">
             Searching for opportunites with a team that has a growth mindset
           </h4>
-          <ul>
+          <ul className="intro-list">
             <li>Always eager to learn, adapt, and grow</li>
             <li>Test my communication and team skills</li>
             <li>Have more authority and autonomy over the systems I build</li>
             <li>B.S. Computer Engineering from CSULB</li>
           </ul>
-          <a
-            href="http://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a href="http://github.com" target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-          <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-            Email
-          </a>
+          <div className="parent-info-links">
+            <a
+              href="http://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="intro-info-links"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="http://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="intro-info-links"
+            >
+              Github
+            </a>
+            <a
+              href="http://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="intro-info-links"
+            >
+              Email
+            </a>
+          </div>
         </section>
-        <section className="about-me">
-          <h3 className="about-section">About Me</h3>
-          <p>
+        <section className="about-section">
+          <h3 className="about-me">About Me</h3>
+          <p className="about-me-first">
             Yo! My name is Joseph Almeida, I've been close to a computer since
             an early age but did not start programming until I reached
             university.
           </p>
-          <p>
+          <p className="about-me-second">
             When I'm not coding I play games with my friends, work out, or when
             the weather permits some amateur astronomy
           </p>
@@ -114,24 +127,37 @@ function App() {
         </section>
         <section className="closing-remarks">
           <h3 className="contact-info">Stay In Touch</h3>
-          <p>Don't be a stranger ;P</p>
-          <a
-            href="http://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a href="http://github.com" target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-          <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-            Email
-          </a>
+          <p className="contact-sub">Don't be a stranger ;P</p>
+          <div className="parent-info-links">
+            <a
+              href="http://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="intro-info-links"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="http://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="intro-info-links"
+            >
+              Github
+            </a>
+            <a
+              href="http://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="intro-info-links"
+            >
+              Email
+            </a>
+          </div>
         </section>
       </main>
       <footer className="end-content">
-        Designed by your boy
+        <span>Designed by your boy</span>
         <div className="attribution">
           <div>
             Icons made by{" "}
