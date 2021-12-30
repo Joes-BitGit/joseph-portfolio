@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* prevents overflow specifically on the navbar */
   overflow-x: hidden;
+  background: var(--dark-bg-color);
 }
 
 code {
