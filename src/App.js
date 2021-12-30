@@ -31,18 +31,19 @@ function App() {
               mobileNavMenu ? "active-mobile-menu" : ""
             }`}
           >
-            <li>Home</li>
-            <li>Projects</li>
+            <li className="nav-link-item">Home</li>
+            <li className="nav-link-item">Projects</li>
           </ul>
         </nav>
       </header>
       <main className="main-content">
         <section className="intro-blurb">
-          <p className="greeting">Greetings I'm-</p>
-          <h2 className="intro-name">Joseph</h2>
-          <h3 className="intro-description">
-            Software Engineer under progress.
-          </h3>
+          <p className="greeting">
+            Greetings I'm-
+            <h2 className="intro-name">Joseph</h2>
+          </p>
+
+          <h3 className="intro-description">A Software Engineer.</h3>
           <h4 className="intro-sub">
             Searching for opportunites with a team that has a growth mindset
           </h4>
@@ -164,11 +165,16 @@ function App() {
             <a
               href="https://www.flaticon.com/authors/creatype"
               title="Creatype"
+              className="footer-attribution"
             >
               Creatype
             </a>{" "}
             from{" "}
-            <a href="https://www.flaticon.com/" title="Flaticon">
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+              className="footer-attribution"
+            >
               www.flaticon.com
             </a>
           </div>
