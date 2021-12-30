@@ -58,7 +58,7 @@ function App() {
               href="http://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="intro-info-links"
+              className="info-links"
             >
               LinkedIn
             </a>
@@ -66,7 +66,7 @@ function App() {
               href="http://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="intro-info-links"
+              className="info-links"
             >
               Github
             </a>
@@ -74,7 +74,7 @@ function App() {
               href="http://google.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="intro-info-links"
+              className="info-links"
             >
               Email
             </a>
@@ -134,7 +134,7 @@ function App() {
               href="http://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="intro-info-links"
+              className="info-links"
             >
               LinkedIn
             </a>
@@ -142,7 +142,7 @@ function App() {
               href="http://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="intro-info-links"
+              className="info-links"
             >
               Github
             </a>
@@ -150,7 +150,7 @@ function App() {
               href="http://google.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="intro-info-links"
+              className="info-links"
             >
               Email
             </a>
