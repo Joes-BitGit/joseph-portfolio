@@ -26,11 +26,16 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin-left: 1rem;
+
   margin-right: 1rem;
   /* Lines images up nicely */
   justify-content: space-between;
+  border-radius: 2%;
 }
+
+/* .card:hover{
+  box-shadow: ;
+} */
 
 .visual {
   height: 100px;
@@ -129,6 +134,11 @@
   }
 }
 
+.main-content {
+  text-align: left;
+  padding-left: 1rem;
+}
+
 .nav-link-item:hover {
   text-decoration: underline;
   color: var(--general-color);
@@ -163,7 +173,8 @@
 }
 
 .intro-list > li {
-  padding: 1%;
+  padding: 5px;
+  font-weight: 600;
 }
 
 .parent-info-links {
@@ -176,6 +187,8 @@
   color: var(--highlight-color);
   background: hsl(0 0% 0%/0.8);
   padding: 1rem;
+  font-weight: bold;
+  border-radius: 10%;
 }
 
 .info-links:hover {
@@ -206,6 +219,8 @@
 }
 
 .closing-remarks {
+  text-align: center;
+  padding-right: 1rem;
   padding-bottom: 1%;
 }
 
