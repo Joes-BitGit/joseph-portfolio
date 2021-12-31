@@ -48,10 +48,12 @@ function App() {
             Searching for opportunites with a team that has a growth mindset
           </h4>
           <ul className="intro-list">
-            <li>Always eager to learn, adapt, and grow</li>
-            <li>Test my communication and team skills</li>
-            <li>Have more authority and autonomy over the systems I build</li>
-            <li>B.S. Computer Engineering from CSULB</li>
+            <li>📈 Always eager to learn, adapt, and grow</li>
+            <li>🗣 Test my communication and team skills</li>
+            <li>
+              ✍️ Have more authority and autonomy over the systems I build
+            </li>
+            <li>📚 B.S. Computer Engineering from CSULB</li>
           </ul>
           <div className="parent-info-links">
             <a
