@@ -11,6 +11,129 @@
   background: var(--dark-bg-color);
   color: var(--highlight-color);
 }
+
+/* primary header and navbar*/
+.logo-initials {
+  margin: 2rem;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(0 0% 0%/0.8);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-navigation {
+  /* background: hsl(0 0% 0%/0.8); */
+  backdrop-filter: blur(0.1rem);
+}
+/* end header */
+
+/* entire page */
+.main-content {
+  text-align: left;
+  padding-left: 1rem;
+}
+/* end entire page */
+
+.nav-link-item:hover {
+  text-decoration: underline;
+  color: var(--general-color);
+  cursor: pointer;
+}
+
+/* intro-blurb section */
+.intro-blurb {
+  padding-bottom: 1rem;
+}
+.greeting {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.intro-name {
+  color: var(--general-color);
+  font-weight: 800;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.intro-description {
+  color: var(--general-color);
+  font-weight: 700;
+  margin: 0;
+}
+
+.intro-sub {
+  color: var(--secondary-color);
+}
+
+.intro-list {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.intro-list > li {
+  padding: 5px;
+  font-weight: 600;
+}
+
+.parent-info-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info-links {
+  text-decoration: none;
+  color: var(--highlight-color);
+  background: hsl(0 0% 0%/0.8);
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 10%;
+}
+
+.info-links:hover {
+  text-decoration: underline;
+  color: var(--general-color);
+  cursor: pointer;
+}
+/* end intro-blurb section */
+
+/* about-me section */
+.about-section {
+  padding-bottom: 1rem;
+}
+.about-me {
+  color: var(--general-color);
+}
+
+.about-me-first,
+.about-me-second {
+  color: var(--secondary-color);
+}
+/* end about me section */
+
+/* highlighted work section */
+.highlighted-work {
+  padding-bottom: 1rem;
+}
+.projects {
+  color: var(--general-color);
+}
+
+.contact-info {
+  color: var(--general-color);
+}
+
+.contact-sub {
+  color: var(--secondary-color);
+}
 /* 1-line layouts: 8. Line Up*/
 .parent {
   display: grid;
@@ -43,6 +166,15 @@
   background: var(--secondary-color);
 }
 /* End of layout pattern*/
+/* end higlighted work section */
+
+/* closing section */
+.closing-remarks {
+  text-align: center;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+/* end closing section */
 
 /* footer */
 .end-content {
@@ -55,38 +187,25 @@
 }
 /* end footer */
 
-/* primary header */
-.logo-initials {
-  margin: 2rem;
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-.primary-header {
-  align-items: center;
-  justify-content: space-between;
-  background: hsl(0 0% 0%/0.8);
-}
-
-.mobile-nav-toggle {
-  display: none;
-}
-
-.primary-navigation {
-  /* background: hsl(0 0% 0%/0.8); */
-  backdrop-filter: blur(0.1rem);
-}
-/* end header */
-
+/* larger screens */
 @media (min-width: 35em) {
   .primary-navigation {
     --gap: 3rem;
     padding: 1.5rem;
   }
 }
+/* end larger screen */
+
+/* mobile screen sizes */
 @media (max-width: 35em) {
   .primary-header {
     background: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: hsl(0 0% 0%);
+    width: 100%;
+    /* border-bottom: 1px solid var(--secondary-color); */
   }
   .primary-navigation {
     --gap: 2em;
@@ -133,96 +252,7 @@
     border-radius: 50%;
   }
 }
-
-.main-content {
-  text-align: left;
-  padding-left: 1rem;
-}
-
-.nav-link-item:hover {
-  text-decoration: underline;
-  color: var(--general-color);
-  cursor: pointer;
-}
-
-.greeting {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.intro-name {
-  color: var(--general-color);
-  font-weight: 800;
-  font-size: 5rem;
-  margin: 0;
-}
-
-.intro-description {
-  color: var(--general-color);
-  font-weight: 700;
-  margin: 0;
-}
-
-.intro-sub {
-  color: var(--secondary-color);
-}
-
-.intro-list {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-}
-
-.intro-list > li {
-  padding: 5px;
-  font-weight: 600;
-}
-
-.parent-info-links {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.info-links {
-  text-decoration: none;
-  color: var(--highlight-color);
-  background: hsl(0 0% 0%/0.8);
-  padding: 1rem;
-  font-weight: bold;
-  border-radius: 10%;
-}
-
-.info-links:hover {
-  text-decoration: underline;
-  color: var(--general-color);
-  cursor: pointer;
-}
-
-.about-me {
-  color: var(--general-color);
-}
-
-.about-me-first,
-.about-me-second {
-  color: var(--secondary-color);
-}
-
-.projects {
-  color: var(--general-color);
-}
-
-.contact-info {
-  color: var(--general-color);
-}
-
-.contact-sub {
-  color: var(--secondary-color);
-}
-
-.closing-remarks {
-  text-align: center;
-  padding-right: 1rem;
-  padding-bottom: 1%;
-}
+/* end mobile screen sizes */
 
 /* General */
 .flex {
