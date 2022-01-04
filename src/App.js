@@ -49,7 +49,7 @@ function App() {
           </h4>
           <ul className="intro-list">
             <li>📈 Always eager to learn, adapt, and grow</li>
-            <li>🗣 Test my communication and team skills</li>
+            <li>🗣 Test my interpersonal and team skills</li>
             <li>
               ✍️ Have more authority and autonomy over the systems I build
             </li>
