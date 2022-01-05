@@ -118,6 +118,7 @@
 .about-me-first,
 .about-me-second {
   color: var(--secondary-color);
+  font-weight: 450;
 }
 /* end about me section */
 
@@ -129,13 +130,6 @@
   color: var(--general-color);
 }
 
-.contact-info {
-  color: var(--general-color);
-}
-
-.contact-sub {
-  color: var(--secondary-color);
-}
 /* 1-line layouts: 8. Line Up*/
 .parent {
   display: grid;
@@ -158,6 +152,17 @@
   border-radius: 2%;
 }
 
+.card-title,
+.card-desc {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.card-desc {
+  font-size: 95%;
+  font-weight: 300;
+}
+
 /* .card:hover{
   box-shadow: ;
 } */
@@ -175,6 +180,14 @@
   text-align: center;
   padding-right: 1rem;
   padding-bottom: 1rem;
+}
+
+.contact-info {
+  color: var(--general-color);
+}
+
+.contact-sub {
+  color: var(--secondary-color);
 }
 /* end closing section */
 

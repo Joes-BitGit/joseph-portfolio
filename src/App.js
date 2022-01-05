@@ -99,31 +99,35 @@ function App() {
           <h3 className="projects">Highlighted Work</h3>
           <div className="parent">
             <div className="card 1">
-              <h4>Pomodoro</h4>
-              <p>25/5 Timer pumpkin style for the spooky season</p>
+              <h4 className="card-title">Pomodoro</h4>
+              <p className="card-desc">
+                25/5 Timer pumpkin style for the spooky season
+              </p>
               <img src="" alt="timer" className="visual" />
             </div>
             <div className="card 2">
-              <h4>Menu</h4>
-              <p>
+              <h4 className="card-title">Menu</h4>
+              <p className="card-desc">
                 Menu that creates, reads/searches, updates, and deletes items
                 for a restaurant
               </p>
               <img src="" alt="menu builder" className="visual" />
             </div>
             <div className="card 3">
-              <h4>Marvel Lookup</h4>
-              <p>Marvel character search that uses the Marvel API</p>
+              <h4 className="card-title">Marvel Lookup</h4>
+              <p className="card-desc">
+                Marvel character search that uses the Marvel API
+              </p>
               <img src="" alt="marvel lookup info" className="visual pink" />
             </div>
             <div className="card 4">
-              <h4>Journal</h4>
+              <h4 className="card-title">Journal</h4>
               <p>Personal Journal to write thoughts and feelings down</p>
               <img src="" alt="journal" className="visual" />
             </div>
             <div className="card 5">
-              <h4>Amatuer Astronomy</h4>
-              <p>Future Project</p>
+              <h4 className="card-title">Amatuer Astronomy</h4>
+              <p className="card-desc">Future Project</p>
               <img src="" alt="screenshot of the timer" className="visual" />
             </div>
           </div>
