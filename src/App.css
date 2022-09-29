@@ -54,7 +54,7 @@
 }
 .greeting {
   font-weight: 750;
-  font-size: 1rem;
+  /* font-size: clamp(96px, 1rem, 1rem); */
 }
 
 .intro-name {
@@ -188,6 +188,7 @@
 
 .contact-sub {
   color: var(--secondary-color);
+  font-weight: 450;
 }
 /* end closing section */
 
@@ -195,7 +196,7 @@
 .end-content {
   padding: 1%;
   color: var(--general-color);
-  font-size: 0.75em;
+  font-size: 0.5em;
 }
 .footer-attribution {
   color: var(--highlight-color);

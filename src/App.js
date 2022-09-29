@@ -87,7 +87,7 @@ function App() {
           <p className="about-me-first">
             Yo! My name is Joseph Almeida, I've been close to a computer since
             an early age but did not start programming until I reached
-            university.
+            university. TAlk about your love of games and smartphones
           </p>
           <p className="about-me-second">
             When I'm not coding I play games with my friends, work out, or when
@@ -128,6 +128,14 @@ function App() {
             <div className="card 5">
               <h4 className="card-title">Amatuer Astronomy</h4>
               <p className="card-desc">Future Project</p>
+              <img src="" alt="screenshot of the timer" className="visual" />
+            </div>
+            <div className="card 6">
+              <h4 className="card-title">Link to Freelance Projects</h4>
+              <p className="card-desc">Future Project</p>
+              <span>Perfecto Foods</span>
+              <span>LA Costa Website</span>
+              <span>100 Devs websites e.g Beauty Salon, etc.</span>
               <img src="" alt="screenshot of the timer" className="visual" />
             </div>
           </div>
